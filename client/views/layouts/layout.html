@@ -1,0 +1,15 @@
+<template name="layout">
+  <head>
+    <title>tutorapp</title>
+  </head>
+  <body>
+    <header>
+      {{#if isInRole 'admin'}}
+        {{> admin_nav}}
+      {{/if}}
+    </header>
+    <div class="container">
+      {{>yield}}
+    </div>
+  </body>
+</template>
