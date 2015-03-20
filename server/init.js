@@ -39,6 +39,6 @@ Meteor.startup(function() {
   return _results;
 
   $(window).resize(function(evt) {
-    Session.set("touch", new Date());
+    Session.set("map", new Date());
   });
 });
