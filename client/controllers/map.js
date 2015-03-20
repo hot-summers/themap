@@ -1,13 +1,14 @@
 Template.map.rendered = function(){
   console.log('hi i iz map');
+    console.log(Session.get('map'));
 };
 
-Template.body.map = function() {
+Template.map.resize = function() {
   return Session.get('map');
 }
 
-Template.map.events({
-  'click li': function(e, t) {
+Template.navigation.events({
+  'click li': function(e) {
     e.preventDefault();
     console.log('yo');
   }

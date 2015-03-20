@@ -1,10 +1,13 @@
 <template name="map">
   {{> navigation}}
-  {{> svgMap}}
+  <div class="container">
+    {{> svgMap}}
+  </div>
+  {{resize}}
 </template>
 
 <template name="navigation">
-  <ul>
+  <ul class="navigation">
     <li class="legal">Legal</li>
     <li class="illegal">Illegal</li>
   </ul>
