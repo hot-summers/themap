@@ -1,7 +1,14 @@
 html, body {
   width: 100%;
 }
-
+.hidden {
+  opacity: .2;
+  fill: blue;
+  stroke: white;
+  &.active {
+    opacity: 1;
+  }
+}
 svg {
   width: 2000px;
   height: 1000px;
@@ -12,6 +19,9 @@ svg {
   opacity: 1;
 }
 
+svg path[data-legality='legal'] {
+  fill: purple;
+}
 .title {
   color: black;
   font-family: Open Sans;
@@ -77,6 +87,10 @@ svg {
   &:hover {
     fill: purple;
   }
+  &.active {
+    fill: blue;
+    opacity: 1;
+  }
 }
 
 .decriminalized {
@@ -90,9 +104,6 @@ svg {
   display: block;
 }
 
-.hidden {
-  display: none;
-}
 
 .description {
   pointer-events: none;
