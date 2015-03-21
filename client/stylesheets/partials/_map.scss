@@ -1,12 +1,197 @@
+html, body {
+  width: 100%;
+}
+
 svg {
-  width: 100vw;
-  height: 100vh;
+  width: 2000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.heyo:hover {
+  opacity: 1;
+}
+
+.title {
+  color: black;
+  font-family: Open Sans;
+  font-weight: 100;
+}
+
+.leg {
+  color: green;
+  opacity: .7;
+  font-family: Open Sans;
+  font-weight: 100;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.dec {
+  color: #ea9b0b;
+  opacity: .7;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 100;
+}
+
+.med {
+  color: #21669E;
+  opacity: .7;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 100;
+}
+
+.ill {
+  color: #c11414;
+  opacity: .7;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 100;
+  margin: 0px;
+}
+
+.medical {
+  fill: #21669E;
+  opacity: .7;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+}
+
+.legal {
+  fill: green;
+  opacity: .7;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+}
+
+.illegal {
+  fill: #c11414;
+  opacity: .7;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+}
+
+.decriminalized {
+  fill: #ea9b0b;
+  opacity: .7;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+}
+
+.toggle {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.description {
+  pointer-events: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  path {
-    fill: blue;
-  }
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  opacity: .9;
+  padding: 10px 15px;
+  z-index: 5;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  color: green;
+  color-opacity: .7;
+  font-family: Open Sans;
+  font-weight: 100;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #eee;
+  display: none;
+}
+.description.active {
+  display: block;
+}
+.description:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: green;
+  width: 12%;
+  height: 10%;
+  margin-left: 700px;
+  opacity: .7;
+  font-family: Open Sans;
+  font-weight: 100;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline:none;
+}
+
+.btn:hover {
+  background-color: #21669E;
+  opacity: .7;
+  color: #FFFFFF;
+}
+
+.l {
+  color: green;
+  opacity: .8;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 100;
+  margin-left: 650px;
+}
+
+.il {
+  color: #c11414;
+  opacity: .8;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 100;
+  margin-left: 650px;
+}
+
+.d {
+  color: #ea9b0b;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 100;
+  margin-left: 650px;
+}
+
+.m {
+  color: #21669E;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 100;
+  margin-left: 650px;
+}
+
+.states {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.states li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 0;
 }
 .navigation {
   z-index: 10;
