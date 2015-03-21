@@ -64,6 +64,9 @@ svg {
   opacity: .7;
   stroke: #FFFFFF;
   stroke-width: 0.75;
+  &:hover {
+    fill: #13193a;
+  }
 }
 
 .illegal {
@@ -71,6 +74,9 @@ svg {
   opacity: .7;
   stroke: #FFFFFF;
   stroke-width: 0.75;
+  &:hover {
+    fill: purple;
+  }
 }
 
 .decriminalized {

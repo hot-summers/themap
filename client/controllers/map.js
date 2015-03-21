@@ -8,6 +8,8 @@ Template.map.rendered = function(){
 Template.navigation.events({
   'click li': function(e) {
     e.preventDefault();
-    console.log('yo');
+    var $highlight = $(e.currentTarget).attr('class');
+
+    $('svg .'+$highlight).addClass('active');
   }
 })
