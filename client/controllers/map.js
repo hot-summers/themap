@@ -1,11 +1,8 @@
 Template.map.rendered = function(){
-  console.log('hi i iz map');
-    console.log(Session.get('map'));
+  $(window).resize(function() {
+    console.log('cool');
+  });
 };
-
-Template.map.resize = function() {
-  return Session.get('map');
-}
 
 Template.navigation.events({
   'click li': function(e) {
